@@ -1,3 +1,7 @@
+django-admin startproject octofit_tracker octofit-tracker/backend
+
+source octofit-tracker/backend/venv/bin/activate
+
 Django==4.1.7
 djangorestframework==3.14.0
 django-allauth==0.51.0
@@ -23,3 +27,6 @@ wcwidth==0.2.13
 webcolors==24.8.0
 webencodings==0.5.1
 websocket-client==1.8.0
+
+cd octofit-tracker/backend/octofit_tracker
+python manage.py migrate
